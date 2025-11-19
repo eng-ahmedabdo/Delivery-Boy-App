@@ -1,3 +1,4 @@
+import 'package:delevery_boy_app/presentation/widgets/order_card.dart';
 import 'package:delevery_boy_app/provider/current_location_provider.dart';
 import 'package:delevery_boy_app/utils/utils.dart';
 import 'package:flutter/material.dart';
@@ -85,7 +86,10 @@ class _DrivenHomeScreenState extends State<DrivenHomeScreen> {
                   alignment: Alignment.bottomCenter,
                   child: Padding(
                     padding: EdgeInsets.all(15.0),
-                    child: Text('Hello'),
+                    child: SizedBox(
+                      width: double.infinity,
+                      child: OrderCard(),
+                    ),
                   ),
                 ),
               // show static online button at the top
@@ -108,29 +112,30 @@ class _DrivenHomeScreenState extends State<DrivenHomeScreen> {
                           ),
                           child: Padding(
                             padding: EdgeInsets.all(2.0),
-                            child: Row(children: [
-                              //online button
-                              Expanded(
-                                flex: 2,
-                                child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.red,
-                                  borderRadius: BorderRadius.circular(30),
-                                ),
-                                alignment: Alignment.center,
-                                child: Text(
-                                  'ONLINE',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 16.0,
-                                    fontWeight: FontWeight.w500,
+                            child: Row(
+                              children: [
+                                //online button
+                                Expanded(
+                                  flex: 2,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.red,
+                                      borderRadius: BorderRadius.circular(30),
+                                    ),
+                                    alignment: Alignment.center,
+                                    child: Text(
+                                      'ONLINE',
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16.0,
+                                        fontWeight: FontWeight.w500,
+                                      ),
+                                    ),
                                   ),
                                 ),
-                              ),),
-                              Expanded(child: SizedBox(
-
-                              ))
-                            ]),
+                                Expanded(child: SizedBox()),
+                              ],
+                            ),
                           ),
                         ),
                       ),

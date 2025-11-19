@@ -4,7 +4,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class CurrentLocationProvider extends ChangeNotifier {
   // Default to San Francisco
-  LatLng _currentLocation = LatLng(37.7749, 122.4194);
+  LatLng _currentLocation = LatLng(30.762467562800502, 31.94190050425241);
   bool _isLoading = false;
   String _errorMessage = '';
 

@@ -1,6 +1,6 @@
 import 'dart:ui';
 
-  final Color buttonMainColor = Color(0XFFcb0300);
+  const Color buttonMainColor = Color(0XFFcb0300);
   final Color pickedUpColor = Color(0XFFf9843b);
   final Color destinationReached = Color(0XFFfd8729);
   final Color declineOrder = Color(0XFFf1f2f6);
